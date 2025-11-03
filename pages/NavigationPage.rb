@@ -40,7 +40,6 @@ class NavigationPage < BasePage
             click(@elements::BTN_USAR_CP)
             begin
                 begin
-                    sleep(1)
                     click(@elements::CLOSE_ELIGE_UNA_CUENTA)
                 rescue
                 end

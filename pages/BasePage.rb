@@ -100,11 +100,11 @@ class BasePage
             container_el.find_element(by, value)
     end
 
-    def scroll(n)
+    def scroll(n,percent: 0.6)
             n.times do
                 driver.execute_script('mobile: scrollGesture', {
                     left: 500, top: 1000, width: 500, height: 1000,
-                    direction: 'down', percent: 0.6
+                    direction: 'down', percent: percent
                 })
             end  
     end

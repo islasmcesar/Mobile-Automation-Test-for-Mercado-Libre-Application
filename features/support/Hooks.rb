@@ -1,10 +1,22 @@
 require 'base64'
 
 Before do
+    # 1) Asegura la sesión Appium
+    $driver.start_driver unless ($driver && $driver.driver)
+
+    # 2) Reinicia la app (cierra si está abierta y vuelve a abrir)
+    restart_app!
+
+    # 3) Contexto nativo (por si la app abre en webview)
+    begin
+        ctx = driver.current_context
+        $driver.context('NATIVE_APP') unless ctx == 'NATIVE_APP'
+    rescue => e
+        warn "WARN context switch: #{e.message}"
+    end
+
+    # 4) Lo tuyo
     @step_idx = 0
-    $driver.start_driver
-    ctx = driver.current_context
-    $driver.context('NATIVE_APP') unless ctx == 'NATIVE_APP'
 end
 
 AfterStep do |*args|
