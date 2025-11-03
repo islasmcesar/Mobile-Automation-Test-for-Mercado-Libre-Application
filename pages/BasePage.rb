@@ -104,7 +104,7 @@ class BasePage
             n.times do
                 driver.execute_script('mobile: scrollGesture', {
                     left: 500, top: 1000, width: 500, height: 1000,
-                    direction: 'down', percent: 0.55
+                    direction: 'down', percent: 0.6
                 })
             end  
     end

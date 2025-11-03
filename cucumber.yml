@@ -1,0 +1,1 @@
+default: --publish-quiet --format progress --format html --out reports/cucumber.html

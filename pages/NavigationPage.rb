@@ -39,6 +39,11 @@ class NavigationPage < BasePage
             android_type_digits_via_keycodes("16029")
             click(@elements::BTN_USAR_CP)
             begin
+                begin
+                    sleep(1)
+                    click(@elements::CLOSE_ELIGE_UNA_CUENTA)
+                rescue
+                end
                 sleep(3)
                 find(@elements::BTN_CONTINUAR)
                 click(@elements::ARROW_BACK)

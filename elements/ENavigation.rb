@@ -20,4 +20,5 @@ class ENavigation
     RESULTS_CONTAINER = { xpath: %q(//android.view.View[@resource-id="root-app"]/android.view.View[1]) }
     PRODUCT_CARD_REL  = %q(.//android.view.View[contains(@resource-id,'polycard_component')])
     TXT_CONTINUAR_COMO_INVITADO = {xpath: "//android.widget.TextView[@resource-id=\"com.mercadolibre:id/andes_button_text\" and @text=\"Continuar como visitante\"]"}
+    CLOSE_ELIGE_UNA_CUENTA = {id: "com.google.android.gms:id/cancel"}
 end
