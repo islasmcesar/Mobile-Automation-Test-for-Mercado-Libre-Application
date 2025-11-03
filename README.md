@@ -1,6 +1,6 @@
 # Framework  de Automatización de Pruebas en la App de Mercado Libre (Ruby + Appium + Cucumber).
 
-Este repositorio contiene la implementación de un framework de automatización de pruebas funcionales para la aplicación movile de Mercado Libre (Android). Para su desarrollo se utilizaron las herramientas **Ruby**, **Appium**, y **Cucumber**.En dicho proyecto se encuentra un caso de prueba que implementa los siguientes pasos:
+Este repositorio contiene la implementación de un framework de automatización de pruebas funcionales para la aplicación mobile de Mercado Libre (Android). Para su desarrollo se utilizaron las herramientas **Ruby**, **Appium**, y **Cucumber**.En dicho proyecto se encuentra un caso de prueba que implementa los siguientes pasos:
 
 Functionality to Test: Validate a search flow and filter functionality in the Mercado Libre mobile application.
 
